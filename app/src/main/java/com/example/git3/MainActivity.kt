@@ -2,6 +2,7 @@ package com.example.git3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.git3.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -10,13 +11,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        nullSafety()
     }
-    fun x(){
+    /*fun x(){
 
-        var edad=20
-        if (edad<18) println("No entra")
+        var edad=17
+        if (edad in 18..70) println("entra")
         else {
-            println("Puede pasar")
+
+            println("No entra")
+
+        }
+Log.i("Veamos","Aqui estamos")
+    }*/
+    fun nullSafety() {
+        var marca: String="generalMotor"
+
+        if (marca !=null){
+            println(marca?.length)
+        }
+        else{
+            println("marca es null")
         }
 
     }
