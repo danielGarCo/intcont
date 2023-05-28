@@ -25,7 +25,7 @@ return fn(añoVehiculo)
      * @param añoVehiculo
      * @return
      */
-    fun clasico(añoVehiculo: Int):Boolean{
+    fun clasico(añoVehiculo: Int):Int{
         if (añoVehiculo <=1980){
             return true
         }else return false
