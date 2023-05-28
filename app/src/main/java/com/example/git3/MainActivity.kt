@@ -9,10 +9,24 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        nullSafety()
+
+println("revisar"+simplificarUnaFuncion(4,5))
     }
+    fun simplificarUnaFuncion (num1:Int, num2:Int):Int {
+        return num1 + num2
+    }}
+
+
+
+
+
+
+
+
+
+
     /*fun x(){
 
         var edad=17
@@ -24,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
 Log.i("Veamos","Aqui estamos")
     }*/
-    fun nullSafety() {
+ /*   fun nullSafety() {
         var marca: String="generalMotor"
 
         if (marca !=null){
@@ -35,4 +49,5 @@ Log.i("Veamos","Aqui estamos")
         }
 
     }
-}
+}*/
+
